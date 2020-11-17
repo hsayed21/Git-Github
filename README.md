@@ -216,3 +216,16 @@ after add branch create file and do some task then add files the commit
 `$ git push origin --delete v1.0` // remove tag remote
 
 <p>After Finished tag create **Release** </p>
+
+
+> Mirror existed repo to add your repos
+
+`$ git clone http://github.com/account/repo.git Cloned-repo` <br>
+`$ cd Cloned-repo` <br>
+`$ rm -rf .git` <br>
+`$ git init` <br>
+`$ git add .` <br>
+`$ git commit -m "first commit"` <br>
+`$ git remote add origin git@github.com:username/created-repo.git` <br>
+`$ git push -u origin master` <br>
+
